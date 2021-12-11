@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li,a,button{
+    font-family:'Courier New', Courier, monospace ;
+    font-size: 30px;
+    color:white;
+  
+  }
+
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1%;
+    background-color: #fca311;
+    height: auto;
+  }
+  .logo{
+    cursor: pointer;
+  }
+  
+  .nav_links{
+    list-style: none;
+  }
+  
+  .nav_links li{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #14213d;
+    border-radius: 50px;
+    height:40px;
+    align-content: center;
+    margin-left: 10px;
+  }
+  .nav_links li a{
+    margin: 15px;
+    padding: 10px;
+  }
+  .nav_links li a:hover{
+    color:#fca311;
+  }
+
+  body{
+      height: 100%;
+      width: 100%;
+      background-image: url("games.jfif");
+  }
+
+  .logo{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  }
+
+  a:link{
+    text-decoration: none;
+  }
+  
+  .games a{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #14213d;
+    border-radius: 50px;
+    height:200px;
+    width: 300px;
+    align-content: center;
+    text-align: center;
+    margin-left: 200px;
+    margin-top:150px;
+    padding-top: 80px;
+  }
+
+
+  
