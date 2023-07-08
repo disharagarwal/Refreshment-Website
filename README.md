@@ -1,7 +1,7 @@
 # Refreshment-Website
 It is a project where I have built a website where one can play games read news and novels
 
-#How does the Game-I that is ball game work
+## How does the Game-I that is ball game work
 1. The code initializes the game canvas and sets its size to match the browser window.
 
 2. The `Player` class represents the player's character as a ball. It has properties such as `radius`, `x`, `y`, and `color`. The `draw()` method is responsible for rendering the player's ball on the canvas.
@@ -23,4 +23,22 @@ It is a project where I have built a website where one can play games read news 
 10. The `animate()` function is the main animation loop of the game. It clears the canvas, renders the player's ball, updates and renders the projectiles and enemies, checks for collisions, and handles the end of the game.
 
 11. Event listeners are set up for the `click` event on the window and the "start game" button. When the window is clicked, a new projectile is created and added to the `projectiles` array. Clicking the "start game" button initializes the game, starts the animation loop, and triggers the generation of enemies.
+
+## Flip the card Game explaination.
+
+1. `flipCard`: This function is called when a card is clicked. It flips the card by adding the `flip` class to it. It also checks if it's the first or second card flipped and performs the necessary actions accordingly.
+
+2. `checkForMatch`: This function is called after the second card is flipped. It checks if the two flipped cards have the same content (e.g., matching images or data). If they match, the cards are disabled (click event listeners removed) and added to the `cardsWon` array. It also updates the score displayed on the screen. If all cards are matched, it displays a message indicating that the player has won the game.
+
+3. `disableCards`: This function is called when a pair of matching cards is found. It removes the click event listeners from the matched cards, adds them to the `cardsWon` array, and updates the score. It then calls `resetBoard` to prepare for the next set of flipped cards.
+
+4. `unFlipCards`: This function is called when a pair of cards does not match. It temporarily disables flipping of cards by setting `lockBoard` to `true`. It flips the two cards back over (by removing the `flip` class) after a short delay of 750 milliseconds. After flipping the cards back, it sets `lockBoard` to `false`, allowing the player to flip other cards again.
+
+5. `resetBoard`: This function resets the game board by resetting the `hasFlippedCard` and `lockBoard` variables to `false`, and resetting the `firstCard` and `secondCard` variables to `null`. This prepares the board for the next pair of flipped cards.
+
+6. `shuffle` (IIFE - Immediately Invoked Function Expression): This function shuffles the order of the cards on the screen by assigning a random `order` value to each card. It is immediately invoked when the script runs to shuffle the cards at the start of the game.
+
+7. Event Listeners: The code adds a click event listener to each card element (`cards.forEach(card => card.addEventListener('click', flipCard));`). This allows the player to flip the cards by clicking on them.
+
+These functions work together to create the card-flipping memory game. Players can flip two cards at a time and try to find matching pairs by remembering the positions of the flipped cards. The game keeps track of the score and displays it on the screen. The game continues until all pairs of cards are matched.
 
