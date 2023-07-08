@@ -1,7 +1,7 @@
 # Refreshment-Website
 It is a project where I have built a website where one can play games read news and novels
 
-## How does the Game-I that is ball game work
+## How does the ball game work
 1. The code initializes the game canvas and sets its size to match the browser window.
 
 2. The `Player` class represents the player's character as a ball. It has properties such as `radius`, `x`, `y`, and `color`. The `draw()` method is responsible for rendering the player's ball on the canvas.
