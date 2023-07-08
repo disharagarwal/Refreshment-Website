@@ -1,5 +1,24 @@
 # Refreshment-Website
-It is a project where I have built a website where one can play games read news and novels
+
+Project Name is a dynamic website built using React. It offers a variety of engaging features to refresh your mind, including games, news links, and a collection of novels to read. This README file provides an overview of the project and its key components.
+
+## Features
+
+- Games: The website includes two interactive games to entertain users. The first game is a card-flipping game where the objective is to match pairs of cards. The second game involves controlling a ball to hit blocks and earn points.
+
+- News Links: Stay updated with the latest news by accessing the provided news links. These links direct users to reputable news websites where they can explore various topics of interest.
+
+- Novels Collection: Dive into a curated collection of captivating novels available for reading. Immerse yourself in different fictional worlds and let your imagination soar.
+
+## Technologies Used
+
+The project was developed using the following technologies:
+
+- React: The website is built using React, a popular JavaScript library for building user interfaces. React allows for the creation of dynamic and interactive components, providing a smooth and responsive user experience.
+
+- Figma: The initial design of the web pages was created using Figma, a collaborative design tool. Figma facilitated the visual planning and layout of the website, ensuring an appealing and user-friendly interface.
+
+- MongoDB: The user login functionality was implemented using MongoDB, a powerful NoSQL database. MongoDB securely stores user information, enabling authentication and access control within the website.
 
 ## How does the ball game work
 1. The code initializes the game canvas and sets its size to match the browser window.
